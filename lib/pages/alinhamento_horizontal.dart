@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_primeiro_app/pages/login_page.dart';
 
 class AlinhamentoHorizontal extends StatelessWidget {
   const AlinhamentoHorizontal({super.key});
@@ -20,11 +21,10 @@ class AlinhamentoHorizontal extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => {
           Navigator.push(context,
-            MaterialPageRoute(builder: (context) => MinhaPrimeiraPage())
+            MaterialPageRoute(builder: (context) => MinhaLoginPage())
           )
         },
-        child: Icons(Icons.add)
       ),
-    )
+    );
   }
 }

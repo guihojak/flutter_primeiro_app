@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_primeiro_app/pages/login_page.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MeuPrimeiroApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MeuPrimeiroApp extends StatelessWidget {
+  const MeuPrimeiroApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
       ),
-      home: 
+      home:  MinhaLoginPage(),
     );
   }
 }
